@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Order</title>
+    <link rel="stylesheet" href="./menu.css">
+</head>
+<body>
+
+    <form action="" class="footer-form" id="bookingForm">
+        <p class="footer-list-title">Book Your Order</p>
+
+        <div class="input-wrapper">
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name" class="input-field" id="fullName">
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email" class="input-field" id="emailAddress">
+        </div>
+
+        <div class="input-wrapper">
+            <select name="total_person" aria-label="Total person" class="input-field" id="totalPerson">
+                <option value="person">Person</option>
+                <option value="2 person">2 Person</option>
+                <option value="3 person">3 Person</option>
+                <option value="4 person">4 Person</option>
+                <option value="5 person">5 Person</option>
+            </select>
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field" id="bookingDate">
+        </div>
+
+        <textarea name="message" required placeholder="Order" aria-label="Order" class="input-field" id="message"></textarea>
+
+        <button type="submit" class="btn">Place Order</button>
+    </form>
+
+    <!-- Section to Display Booking Information -->
+    <section id="bookingDetailsSection">
+        <h2>Booking Details</h2>
+        <div id="bookingDetails"></div>
+    </section>
+
+    <script src="./menu.js"></script>
+</body>
+</html>

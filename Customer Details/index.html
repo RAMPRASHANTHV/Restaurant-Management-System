@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER DETAILS</title>
+    <link rel="stylesheet" href="./cus_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>CUSTOMER DETAILS </h1>
+        <div class="input-container">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="Address" id="grade">
+            <input type="text" placeholder="Contact" id="age">
+            <input type="text" placeholder="Customer_ID" id="degree">
+            <select name="total_person" aria-label="Total person" class="input-field" id="peson">
+                <option value="person">Person</option>
+                <option value="2 person">2 Person</option>
+                <option value="3 person">3 Person</option>
+                <option value="4 person">4 Person</option>
+                <option value="5 person">5 Person</option>
+              </select>
+              <input type="datetime-local" name="booking_date" aria-label="Reservation date" class="input-field" id="datetime">
+        </div>
+
+        <button class="button" type="submit" id="submit" onclick="addStudent()">Add Customer</button>
+    
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search By Name, email or Degree">
+
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Customer_ID</th>
+                    <th>No of Person</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+    
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./CustomerCRUD.js"></script>
+</body>
+</html>
